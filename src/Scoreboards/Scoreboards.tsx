@@ -1,0 +1,1 @@
+import React from "react";import style from './style.module.css'type PropsType = {    count: number}export const Scoreboards = (props: PropsType) => {    return (        <div className={style.scoreboard}>            <div className={props.count === 5 ? style.red : ''}>{props.count}</div>        </div>    )}
