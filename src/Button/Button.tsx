@@ -1,0 +1,1 @@
+import React from "react";type ButtonPropsType = {   onClick: () => void   value: string   className: string   disabled: boolean}export const Button: React.FC<ButtonPropsType> = (props) => {   return (      <button className={props.className} onClick={props.onClick} disabled={props.disabled}>{props.value}</button>   )};
